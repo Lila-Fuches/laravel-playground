@@ -2,28 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="317c7405-3cf9-4fac-b9fb-a2074d2ec2cd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/steve.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/App/Mail/VerifyUserMail.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Domain/Model.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Domain/User/Actions/ChangePasswordAction.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Domain/User/Actions/CreateUserAction.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Domain/User/Actions/ResetPasswordAction.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Domain/User/Actions/SendUserVerificationAction.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Domain/User/Actions/VerifyUserAction.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/App/Console/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/App/Console/Kernel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/App/Exceptions/Handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/App/Exceptions/Handler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/App/Http/Controllers/Auth/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/App/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/App/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/App/Http/Kernel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/App/Http/Middleware/Authenticate.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/App/Http/Middleware/Authenticate.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/App/Http/Middleware/RedirectIfAuthenticated.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/App/Http/Middleware/RedirectIfAuthenticated.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/App/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/App/Providers/AppServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/App/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/App/Providers/RouteServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Domain/User/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Domain/User/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/auth.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/UserFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/UserFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/CreatesApplication.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/CreatesApplication.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -183,7 +162,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1575449278759</updated>
-      <workItem from="1575449280904" duration="4981000" />
+      <workItem from="1575449280904" duration="5129000" />
     </task>
     <servers />
   </component>
