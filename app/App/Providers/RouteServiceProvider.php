@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use Domain\User\Models\User;
 use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
 use Illuminate\Support\Facades\Route;
 
@@ -14,7 +15,7 @@ class RouteServiceProvider extends ServiceProvider
      *
      * @var string
      */
-    protected $namespace = 'App\Http\Controllers';
+    protected $namespace = '';
 
     /**
      * Define your route model bindings, pattern filters, etc.
@@ -23,7 +24,7 @@ class RouteServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        $this->mapBindings();
 
         parent::boot();
     }
@@ -40,6 +41,13 @@ class RouteServiceProvider extends ServiceProvider
         $this->mapWebRoutes();
 
         //
+    }
+
+    protected function mapBindings(): void
+    {
+        Route::bind('user', function (string $uuid): User {
+            return User::whereUuid($uuid)->firstOrFail();
+        });
     }
 
     /**

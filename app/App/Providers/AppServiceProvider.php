@@ -2,27 +2,33 @@
 
 namespace App\Providers;
 
+use Illuminate\Http\Request;
+use Spatie\QueryString\QueryString;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
 {
     /**
-     * Register any application services.
+     * Bootstrap any application services.
      *
      * @return void
      */
-    public function register()
+    public function boot(): void
     {
         //
     }
 
     /**
-     * Bootstrap any application services.
+     * Register any application services.
      *
      * @return void
      */
-    public function boot()
+    public function register(): void
     {
-        //
+        $this->app->singleton(QueryString::class, function () {
+            $request = $this->app->get(Request::class);
+
+            return new QueryString(urldecode($request->getRequestUri()));
+        });
     }
 }
