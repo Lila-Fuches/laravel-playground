@@ -28,7 +28,7 @@ final class SendUserVerificationAction
 
     public function generateVerificationToken(string $email): string
     {
-        return sha1(Hash::make($email . (string) Uuid::uuuiud4()));
+        return sha1(Hash::make($email . (string) Uuid::uuid4()));
     }
 
     private function sendVerification(User $user): void
