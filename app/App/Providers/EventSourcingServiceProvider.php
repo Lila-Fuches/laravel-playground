@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use Illuminate\Support\ServiceProvider;
 use Spatie\EventSourcing\Facades\Projectionist;
 
 class EventSourcingServiceProvider extends ServiceProvider
