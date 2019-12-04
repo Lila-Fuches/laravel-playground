@@ -14,3 +14,11 @@ Laravel Playground is a default installation of Laravel that we use at Lila Fuch
 - Custom API middleware to return profiling data while in development mode.
 - Powerful User Agent Parsing Engine.
 - Event Sourcing to store important events.
+
+
+## TODO
+
+- Slightly Cleaner Login
+- Registration
+- Editing Users, to include
+    - Policies
