@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3bb4dacacf43532a01bf1d3d6dd3bbe1",
+    "content-hash": "a23ac8d6af0f09165fdd1dd5a581154a",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -1428,6 +1428,111 @@
                 "uuid"
             ],
             "time": "2019-12-01T04:55:27+00:00"
+        },
+        {
+            "name": "spatie/laravel-query-builder",
+            "version": "2.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spatie/laravel-query-builder.git",
+                "reference": "e66471c34b28a9511bb545d8c8ec0164b2913301"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spatie/laravel-query-builder/zipball/e66471c34b28a9511bb545d8c8ec0164b2913301",
+                "reference": "e66471c34b28a9511bb545d8c8ec0164b2913301",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/database": "~5.6.34|~5.7.0|~5.8.0|^6.0",
+                "illuminate/http": "~5.6.34|~5.7.0|~5.8.0|^6.0",
+                "illuminate/support": "~5.6.34|~5.7.0|~5.8.0|^6.0",
+                "php": "^7.1"
+            },
+            "require-dev": {
+                "ext-json": "*",
+                "orchestra/testbench": "~3.6.0|~3.7.0|~3.8.0|^4.0",
+                "phpunit/phpunit": "^7.0|^8.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Spatie\\QueryBuilder\\QueryBuilderServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Spatie\\QueryBuilder\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Alex Vanderbist",
+                    "email": "alex@spatie.be",
+                    "homepage": "https://spatie.be",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Easily build Eloquent queries from API requests",
+            "homepage": "https://github.com/spatie/laravel-query-builder",
+            "keywords": [
+                "laravel-query-builder",
+                "spatie"
+            ],
+            "time": "2019-10-08T08:48:28+00:00"
+        },
+        {
+            "name": "spatie/query-string",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spatie/query-string.git",
+                "reference": "e2f6fd4a40c7c6a01ad577d5e744e4684d5f3875"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spatie/query-string/zipball/e2f6fd4a40c7c6a01ad577d5e744e4684d5f3875",
+                "reference": "e2f6fd4a40c7c6a01ad577d5e744e4684d5f3875",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1"
+            },
+            "require-dev": {
+                "larapack/dd": "^1.0",
+                "phpunit/phpunit": "^7.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Spatie\\QueryString\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Brent Roose",
+                    "email": "brent@spatie.be",
+                    "homepage": "https://spatie.be",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Manipulate query strings",
+            "homepage": "https://github.com/spatie/query-string",
+            "keywords": [
+                "query-string",
+                "spatie"
+            ],
+            "time": "2019-11-15T10:28:01+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",
