@@ -2,7 +2,9 @@
 
 namespace Domain\User\Models;
 
+use Domain\User\Collections\UserCollection;
 use Support\HasUuid;
+use Domain\User\Builders\UserBuilder;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
@@ -30,4 +32,28 @@ class User extends Authenticatable implements MustVerifyEmail
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public static function query(): UserBuilder
+    {
+        return parent::query();
+    }
+
+    public function newEloquentBuilder($query)
+    {
+        return new UserBuilder($query);
+    }
+
+    public function newCollection(array $models = []): UserCollection
+    {
+        return new UserCollection($models);
+    }
+
+    /**
+     * Relations
+     */
+
+
+    /**
+     * Other stuff
+     */
 }
