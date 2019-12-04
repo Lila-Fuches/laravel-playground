@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="317c7405-3cf9-4fac-b9fb-a2074d2ec2cd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Support/UserAgentParser.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/playground.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/playground.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Unit/UserTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Unit/UserTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -110,6 +114,7 @@
       <path value="$PROJECT_DIR$/vendor/laravel/framework" />
       <path value="$PROJECT_DIR$/vendor/spatie/laravel-query-builder" />
       <path value="$PROJECT_DIR$/vendor/spatie/query-string" />
+      <path value="$PROJECT_DIR$/vendor/ua-parser/uap-php" />
     </include_path>
   </component>
   <component name="ProjectId" id="1UVkihw1ENWzmLjJx685rlHgqdN" />
@@ -147,17 +152,25 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="PHPUnit.UserTest.test_it_can_delete_a_user">
-    <configuration name="UserTest.test_it_can_create_a_user" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Unit\UserTest" file="$PROJECT_DIR$/tests/Unit/UserTest.php" method="test_it_can_create_a_user" scope="Method" />
+  <component name="RunManager" selected="PHPUnit.UserAgentParserTest">
+    <configuration name="UserAgentParserTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Unit\Support\UserAgentParserTest" file="$PROJECT_DIR$/tests/Unit/Support/UserAgentParserTest.php" scope="Class" />
       <method v="2" />
     </configuration>
-    <configuration name="UserTest.test_it_can_delete_a_user" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Unit\UserTest" file="$PROJECT_DIR$/tests/Unit/UserTest.php" method="test_it_can_delete_a_user" scope="Method" />
+    <configuration name="UserAgentParserTest.test_it_can_set_operating_system" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Unit\Support\UserAgentParserTest" file="$PROJECT_DIR$/tests/Unit/Support/UserAgentParserTest.php" method="test_it_can_set_operating_system" scope="Method" />
       <method v="2" />
     </configuration>
-    <configuration name="UserTest.test_it_can_update_a_user" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Unit\UserTest" file="$PROJECT_DIR$/tests/Unit/UserTest.php" method="test_it_can_update_a_user" scope="Method" />
+    <configuration name="UserAgentParserTest.test_it_can_set_parser" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Unit\Support\UserAgentParserTest" file="$PROJECT_DIR$/tests/Unit/Support/UserAgentParserTest.php" method="test_it_can_set_parser" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <configuration name="UserAgentParserTest.test_it_can_set_user_agent" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Unit\Support\UserAgentParserTest" file="$PROJECT_DIR$/tests/Unit/Support/UserAgentParserTest.php" method="test_it_can_set_user_agent" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <configuration name="UserAgentParserTest.test_it_can_sets_parser" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Unit\Support\UserAgentParserTest" file="$PROJECT_DIR$/tests/Unit/Support/UserAgentParserTest.php" method="test_it_can_sets_parser" scope="Method" />
       <method v="2" />
     </configuration>
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -166,9 +179,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="PHPUnit.UserTest.test_it_can_delete_a_user" />
-        <item itemvalue="PHPUnit.UserTest.test_it_can_update_a_user" />
-        <item itemvalue="PHPUnit.UserTest.test_it_can_create_a_user" />
+        <item itemvalue="PHPUnit.UserAgentParserTest" />
+        <item itemvalue="PHPUnit.UserAgentParserTest.test_it_can_set_operating_system" />
+        <item itemvalue="PHPUnit.UserAgentParserTest.test_it_can_set_user_agent" />
+        <item itemvalue="PHPUnit.UserAgentParserTest.test_it_can_set_parser" />
+        <item itemvalue="PHPUnit.UserAgentParserTest.test_it_can_sets_parser" />
       </list>
     </recent_temporary>
   </component>
@@ -182,7 +197,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1575449278759</updated>
-      <workItem from="1575449280904" duration="6442000" />
+      <workItem from="1575449280904" duration="7352000" />
     </task>
     <servers />
   </component>
