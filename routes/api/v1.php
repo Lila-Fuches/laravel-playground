@@ -1,6 +1,5 @@
 <?php
 
-use Illuminate\Http\Request;
 use Symfony\Component\HttpFoundation\Response;
 
 Route::get('ping', function () {
@@ -12,11 +11,15 @@ Route::get('ping', function () {
 Route::prefix('auth')->namespace('Auth')->as('auth.')->group(function () {
 
     /**
-     * Login
+     * Login Request
      */
     Route::post('login', LoginController::class)->name('login');
 });
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
+Route::middleware(['auth:api'])->group(function () {
+
+    Route::prefix('user')->namespace('Auth')->as('auth.')->group(function () {
+        Route::get('/', UserController::class)->name('user');
+    });
 });
+
