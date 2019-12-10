@@ -16,7 +16,7 @@ class User extends Authenticatable implements MustVerifyEmail
     use Notifiable;
     use SoftDeletes;
 
-    protected $fillable = [
+    protected array $fillable = [
         'uuid',
        'first_name',
         'last_name',
@@ -25,11 +25,11 @@ class User extends Authenticatable implements MustVerifyEmail
         'verification_token'
     ];
 
-    protected $hidden = [
+    protected array $hidden = [
         'password', 'remember_token',
     ];
 
-    protected $casts = [
+    protected array $casts = [
         'email_verified_at' => 'datetime',
     ];
 
